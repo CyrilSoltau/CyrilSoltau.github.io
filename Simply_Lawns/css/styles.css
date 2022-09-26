@@ -1,0 +1,176 @@
+
+/* header image*/
+.back{
+    /*
+    Photo by Paula - https://www.pexels.com/photo/dewdrops-on-green-grass-close-up-photography-139130/ */
+    /*Iamge by Inspector - https://pixabay.com/photos/home-landscape-yard-lawn-garden-169540/ */
+    background-image: url(../img/home-g86561d957_1920.jpg); 
+        font-size: large;
+        height: 10vh
+  
+}
+ /* For buttons in the Landing page */
+.button{
+    color: rgba(15, 15, 15, 0.993);
+ /* background-color: rgb(230, 55, 55);*/
+   background-color: rgb(240, 115, 13);
+}
+
+/* For footer in the Landing page */
+#move{
+    margin-top: 24.5em;
+    padding: 1em;
+}
+/* For footer in the home page */
+#move2{
+    margin-bottom: 21.5em;
+}
+/* For footer  in the FAQ page */
+#move3{
+    margin-top: 15em;
+}
+/* For footer in the Contact page */
+#move4{
+    margin-top: 13.5em;
+}
+/* For footer in the faq page */
+#move5{
+    margin-top: 5em;
+}
+/* For  the border of the contact form */
+#border{
+    border: 6px solid black;
+   padding-top: 4em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.size{
+    font-size: small;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+nav{
+    background-color: rgb(240, 115, 13);
+    margin-bottom: 1em;
+}
+
+footer{
+    
+    background-color: rgb(240, 115, 13);
+ 
+   
+} 
+
+h1{
+    font-size: 2em;
+    
+}
+
+
+/* For input buttions in faq and services */
+input {
+    width:10em ;
+    margin-bottom: 1em;
+}
+
+nav
+/* for ul list in services page */
+#place ul {
+    margin-right: 20em;
+    margin-top: 20em;
+    font-size: 10px;
+}
+
+#place p {
+    padding: 10px;
+}
+
+ /* Styles are for the slideshow in services page */
+#pic ul { 
+    display: none; 
+}
+#pic p {
+    text-align: center;
+}
+#pic a{
+   padding: 100em;
+   margin-left: 10em;
+   margin-right: 10em;
+   height: 10em;
+}
+
+
+/*Media Query for Desktop view*/
+@media screen and (min-width:641px) {	
+/* Background in the landing page*/
+ /*Iamge by Inspector - https://pixabay.com/photos/home-landscape-yard-lawn-garden-169540/ */
+    #backlanding{
+        /* Added iamge created by Inspector */
+        background-image: url(../img/home-g86561d957_1920.jpg);
+        
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50%
+      
+        
+        
+    }
+   
+    h1{
+        font-size: 5em;
+    }
+
+    #move{
+    margin-top: 24em;
+    padding: 1px;
+    
+    }
+
+    #move5{
+        margin-top: 10em;
+    }
+
+    * for ul in services page */
+ul  {
+    margin-right: 50em;
+    
+}
+
+#place ul {
+    margin-left: 40em;
+    margin-top: 2em;
+    font-size: 18px;
+}
+
+#place p {
+    padding: 10px;
+}
+
+    /* For footer in the faq page */
+#move5{
+    margin-top: 20.5em;
+}
+
+    label {
+        display: inline-block;
+        width: 11em;
+        text-align: center;
+    }
+    input {
+        margin-left: 1em;
+        margin-right: 0.5em;
+        margin-top: 1em;
+    }
+
+    
+
+}
