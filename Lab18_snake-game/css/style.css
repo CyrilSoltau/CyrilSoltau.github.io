@@ -1,0 +1,26 @@
+.grid{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: groove;
+    border-color: yellow;
+    background-color: black;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+
+  
+    background: linear-gradient(#e66465, #9198e5);
+   
+}
+
+.apple{
+    background-image: url(../img/tomato.png); 
+    
+}
