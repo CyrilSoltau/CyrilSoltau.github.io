@@ -2,8 +2,8 @@
 --
 #Original Author: William Soltau                                   
 #Date Created:9/20/2022                                       
-#Version: 0.3                                                  
-#Date Last Modified: 9/25/2022                               
+#Version: 0.5                                                  
+#Date Last Modified: 10/2/2022                               
 #Modified by: William Soltau                                         
 #Modification log:   
   
@@ -12,6 +12,9 @@ added id = place to the ul in main. added p tag and ul tag to main
 version 0.1 9/22/2022 added id move6 to footer. 
 version 0.2 9/23/2022 added id pic for the slideshow in main sec and the contants of the slide show.
 version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammatical errors.
+Version 0.4 - 9/26/2022  Added pay to nav menu with the page link.
+version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and desktop views. 
+
 
 
 
@@ -24,7 +27,7 @@ version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammati
   <meta charset="utf-8">
   <meta name="description" content="Simply Lawns services page">
   <meta name="keywords" content="Lawn care Bootstrap css html services">
-  <meta name="author" content="William Soltau">
+  <meta name="author" content="William(cyril) Soltau">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- Favicon -->
@@ -39,10 +42,13 @@ version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammati
 
   <!-- My Style Sheet -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
   
   <title>Services</title>
 </head> 
@@ -77,7 +83,7 @@ version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammati
             <a href="faq.html" class="nav-link">FAQ</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Pay Here</a>
+            <a href="pay.html" class="nav-link">Pay Here</a>
           </li>
         </ul>
     
@@ -102,25 +108,24 @@ version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammati
    
 
    <h3 class="text-center">Examples of our work.</h3>
-   <div id="pic">
-    <ul id="image_list">
-      <!--Image by <a href="https://pixabay.com/users/mschiffm-896030/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">mschiffm</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">Pixabay</a>-->
-      <li><a href="img/house-g674ab507a_640.jpg" alt="house with good size yard and plants"></a></li>
-     <!--Image by midascode<a href="https://pixabay.com/users/midascode-2412635/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Barry D</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Pixabay</a>-->
-     <li><a href="img/beautiful-home-gcdb226c0b_640.jpg" title="Catch and Release"> long home with big yard</a></li>
+   <div class="mb-4" id="pic">
+    <div class="cycle-slideshow"
+    data-cycle-fx="fadeout"
+    data-cycle-timeout="2000"
+    date-cycle-speed="1000"
+    data-cycle-caption="#adv-custom-caption"
+    data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}" >
+       <!--Image by midascode<a href="https://pixabay.com/users/midascode-2412635/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Barry D</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Pixabay</a>-->
+    <img src="img/beautiful-home-gcdb226c0b_640.jpg" alt="long home with big yard" data-cycle-title=" Front of Home with big yard">
+     <!--Image by <a href="https://pixabay.com/users/mschiffm-896030/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">mschiffm</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">Pixabay</a>-->
+    <img src="img/house-g674ab507a_640.jpg" alt="house with good size yard and plants" data-cycle-title="Front of Home with Midsize Yard">
+    <!--Image by mabel amber <a href="https://pixabay.com/users/mabelamber-1377835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">👀 Mabel Amber, who will one day</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">Pixabay</a>-->
+    <img src="img/garden-g82b2e6b77_640.jpg" alt="park with flowers and grass " data-cycle-title="Park Garden">
+   
+    <!-- empty element for caption -->
+    <div id="adv-custom-caption"></div>
+</div> 
      
-
-     
-     <!--Image by mabel amber <a href="https://pixabay.com/users/mabelamber-1377835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">👀 Mabel Amber, who will one day</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">Pixabay</a>-->
-     <li><a href="img/garden-g82b2e6b77_640.jpg" title="plants in a park"></a></li>
-    </ul>
-      
-    
-   <p><img id="main_image" src="img/house-g674ab507a_640.jpg" alt="house with good size yard and plants"></p>
-   <p class="mb-4">
-    <input type="button" id="start" value="Start">
-    <input type="button" id="pause" value="Pause" disabled="true">
-   </p> 
 
   </div>
 </main>
@@ -134,8 +139,9 @@ version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammati
       <h6> &copy; All Rights Reserved. Copyright 2022 .</h6>
     </div>
   </footer>
- <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
-  <script src="javascript/slideshow.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="javascript/jquery.cycle2.min.js"></script>
+    <!--delete
+  <script src="javascript/slideshow.js"></script>-->
 </body>
