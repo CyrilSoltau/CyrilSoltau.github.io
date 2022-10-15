@@ -1,8 +1,31 @@
 "use strict";
+const getDate = () => {
+    const currDate = new Date();
 
+    let month = currDate.getMonth() + 1;
+    if(month < 10){
+        month = "0" + month;
+    }
+
+    let day = currDate.getDate();
+    if(day < 10){
+        day = "0" +day;
+    }
+
+    const year = currDate.getFullYear();
+
+    const hours = currDate.getHours();
+    let min = currDate.getMinutes();
+    if(min < 10){
+        min = "0" + min;
+    }
+
+    const dateString = `Thank you for Submitting your contact information at ${hours}:${min} on ${month}/${day}/${year}.`;
+    return dateString;
+};
 
 $(document).ready( () => {
-    // lets us see the calonder when 
+      
     $("#datepicker").datepicker({
         minDate: new Date(),
         maxDate: +45,
@@ -10,7 +33,7 @@ $(document).ready( () => {
     })
 
     
-
+    // 
     $( "#profer" ).selectmenu();
 
   
@@ -53,10 +76,7 @@ $(document).ready( () => {
             $("#phoneNum").next().text("This field is required.");
             isValid = false;
         } 
-        else if ( isNaN(phone) ){
-            $("#phoneNum").next().text("Must be a number.");
-            isValid = false;
-        }
+    
         else if ( !phonePattern.test(phone) ) {
             $("#phoneNum").next().text("Use 999-999-9999 format.");
             isValid = false;
@@ -70,36 +90,38 @@ $(document).ready( () => {
         const date = $("#datepicker").val().trim();
         if(date == ""){
             $("#datepicker").next().text("This field is required.");
+            isValid = false;
         }
         else{
             $("#datepicker").next().text("");
         }
         $("#datapicker").val(date);
 
-       
-
-        // validate the email list
+      // validate the email list
+        const listPattern = /(^yes$|^no$)/gmi;
+       // const listPattern2 = /No/gmi; 
         const list  = $("#email_list").val().trim();
         if(list == ""){
             $("#email_list").next().text("This field is required.");
         }
+        else if( !listPattern.test(list) ){
+            $("#email_list").next().text("Please enter yes or no");
+        }
+      
         else{
             $("#email_list").next().text("");
         }
         $("#email_list").val(list);
 
-       
-
-       
-		
-	 
-
-					
-		 //prevent the default action of submitting the form if any entries are invalid 
+      //prevent the default action of submitting the form if any entries are invalid 
 	   if  (isValid == false) {
            evt.preventDefault();
         }
 
+        if(isValid == true){
+        $("#join_contact").submit();
+        alert(getDate());
+       }
         
     });
 
@@ -111,6 +133,7 @@ $(document).ready( () => {
         $("#phoneNum").val("");
         $("#datepicker").val("");
         $("#email_list").val("");
+        $(".optionclass").val(""); 
        
       
 
@@ -120,6 +143,7 @@ $(document).ready( () => {
         $("#phoneNum").next().text("*");
         $("#datepicker").next().text("*");
         $("#email_list").next().text("*");
+        $(".optionclass").next().text("*");
         
         
         $("#firstlast_name").focus();
@@ -127,6 +151,8 @@ $(document).ready( () => {
 
     // move focus to first text box
     $("#firstlast_name").focus();
+   
+   
 });
 
 

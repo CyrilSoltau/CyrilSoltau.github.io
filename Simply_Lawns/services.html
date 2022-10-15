@@ -2,8 +2,8 @@
 --
 #Original Author: William Soltau                                   
 #Date Created:9/20/2022                                       
-#Version: 0.5                                                  
-#Date Last Modified: 10/2/2022                               
+#Version: 0.6                                                  
+#Date Last Modified: 10/4/2022                               
 #Modified by: William Soltau                                         
 #Modification log:   
   
@@ -13,7 +13,9 @@ version 0.1 9/22/2022 added id move6 to footer.
 version 0.2 9/23/2022 added id pic for the slideshow in main sec and the contants of the slide show.
 version 0.3 - 9/24/2022 Tested in mobile and desktop views. Checked for grammatical errors.
 Version 0.4 - 9/26/2022  Added pay to nav menu with the page link.
-version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and desktop views. 
+version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and desktop views.
+version 0.6 - 10/4/2022 Added controls to cycle2. Added contant to the p tag 
+
 
 
 
@@ -32,7 +34,7 @@ version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and
   
   <!-- Favicon -->
   <!--Lawn mower icons created by Smashicons- href="https://www.flaticon.com/free-icons/lawn-mower"-->
-  <link href="https://www.flaticon.com/free-icons/lawn-mower" rel="icon" href="img/lawn-mower (1).png" type="image/gif" sizes="16x16"> 
+  <link rel="icon" href="img/lawn-mower (1).png" type="image/gif" sizes="16x16"> 
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -50,13 +52,13 @@ version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and
 
   
   
-  <title>Services</title>
+  <title>Simply Lawns || Services</title>
 </head> 
 <body>
   <header class="text-center text-white back" >
   </header>
   <nav class="navbar navbar-expand-sm navbar-dark pt-2 sticky-top text-black-50 ">
-  <a class="navbar-brand" href="index.html"><img src="images/iconmonstr-computer-9-16.png" alt="">&nbsp; Simply Lawns</a> 
+  <a class="navbar-brand" href="index.html">&nbsp; Simply Lawns</a> 
    
 <!-- Hamburger Menu Icon -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
@@ -64,7 +66,7 @@ version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and
        aria-expanded="false"
        aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
-       <p class="Size">Nav<br>Menu</p>
+       <p class="Size">Menu</p>
       </button>
 
        <!--Navbar links-->
@@ -101,33 +103,45 @@ version 0.5 - 9/28/2022 Added a cycle2 for example photoes. Tested in mobile and
         <li>Raking(only done in the fall)</li>
        </ul>
     
-      <p class="text-center">无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem<br>Ipsum 的目的就是为了保持
-         字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”</p>
+      <p class="text-center">These are some of the services that we provide here at simply lawns.<br>Below is some exemples of our lawns</p>
     </div>
    
    
 
    <h3 class="text-center">Examples of our work.</h3>
    <div class="mb-4" id="pic">
-    <div class="cycle-slideshow"
-    data-cycle-fx="fadeout"
-    data-cycle-timeout="2000"
-    date-cycle-speed="1000"
-    data-cycle-caption="#adv-custom-caption"
-    data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}" >
-       <!--Image by midascode<a href="https://pixabay.com/users/midascode-2412635/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Barry D</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Pixabay</a>-->
-    <img src="img/beautiful-home-gcdb226c0b_640.jpg" alt="long home with big yard" data-cycle-title=" Front of Home with big yard">
-     <!--Image by <a href="https://pixabay.com/users/mschiffm-896030/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">mschiffm</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">Pixabay</a>-->
-    <img src="img/house-g674ab507a_640.jpg" alt="house with good size yard and plants" data-cycle-title="Front of Home with Midsize Yard">
-    <!--Image by mabel amber <a href="https://pixabay.com/users/mabelamber-1377835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">👀 Mabel Amber, who will one day</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">Pixabay</a>-->
-    <img src="img/garden-g82b2e6b77_640.jpg" alt="park with flowers and grass " data-cycle-title="Park Garden">
    
-    <!-- empty element for caption -->
-    <div id="adv-custom-caption"></div>
-</div> 
+  
+  
+  <!-- slideshow -->
+  <div class="cycle-slideshow" 
+      data-cycle-fx="fadout"
+      data-cycle-timeout=0
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+      >
+       <!--Image by midascode<a href="https://pixabay.com/users/midascode-2412635/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Barry D</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1680789">Pixabay</a>-->
+     <img src="img/beautiful-home-gcdb226c0b_640.jpg" alt="long home with big yard">
+         <!--Image by <a href="https://pixabay.com/users/mschiffm-896030/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">mschiffm</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1528960">Pixabay</a>-->
+     <img src="img/house-g674ab507a_640.jpg" alt="house with good size yard and plants">
+       <!--Image by mabel amber <a href="https://pixabay.com/users/mabelamber-1377835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">👀 Mabel Amber, who will one day</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3345970">Pixabay</a>-->
+      <img src="img/garden-g82b2e6b77_640.jpg" alt="park with flowers and grass">
      
-
+      <div class= "text-center">
+        
+      </div>
+      <div class="text-center">
+        <span id=prev>&lt; Back  &gt;</span>
+        <span id=next>&lt; Next &gt;</span>
+      </div>
+      
   </div>
+ 
+</div>
+
+
+
+
 </main>
   
 <footer id ="move6" class="jumbotron-fluid text-center p-1">

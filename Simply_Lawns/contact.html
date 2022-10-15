@@ -2,8 +2,8 @@
 --
 #Original Author: William Soltau                                   
 #Date Created:9/6/2022                                       
-#Version: 0.12                                                  
-#Date Last Modified: 10/2/2022                               
+#Version: 0.13                                                  
+#Date Last Modified: 10/14/2022                               
 #Modified by: William Soltau                                         
 #Modification log:   
   
@@ -20,6 +20,7 @@ version 0.9 - 9/28/2022 Added a datepicker to contact form.
 version 0.10 - 9/30/2022 added/ changed date validtaion in contactscript.js 
 version 0.11 - 10/1/2022 Added selectmenu widget
 version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammatical errors.
+version 0.13 - 10/11/2022 added class optionclass to selectmenu
 
 
 
@@ -36,7 +37,7 @@ version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammat
   
   <!-- Favicon -->
   <!--Lawn mower icons created by Smashicons- href="https://www.flaticon.com/free-icons/lawn-mower"-->
-  <link href="https://www.flaticon.com/free-icons/lawn-mower" rel="icon" href="img/lawn-mower (1).png" type="image/gif" sizes="16x16"> 
+  <link rel="icon" href="img/lawn-mower (1).png" type="image/gif" sizes="16x16"> 
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -61,14 +62,14 @@ version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammat
 
   
  
-  <title>contact</title>
+  <title>Simply Lawns || Contact</title>
 </head> 
 <body>
   
   <header class="text-center text-white back" >
   </header>
   <nav class="navbar navbar-expand-sm navbar-dark pt-2 sticky-top text-black-50 ">
-  <a class="navbar-brand" href="home.html"><img src="images/iconmonstr-computer-9-16.png" alt="">&nbsp; Simply Lawns</a> 
+  <a class="navbar-brand" href="home.html">&nbsp; Simply Lawns</a> 
    
 <!-- Hamburger Menu Icon -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
@@ -76,7 +77,7 @@ version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammat
        aria-expanded="false"
        aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
-       <p>Nav<br>Menu</p>
+       <p>Menu</p>
       </button>
 
        <!--Navbar links-->
@@ -129,20 +130,16 @@ version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammat
          </div>
 
         <div class="text-center form-group" id="lebmove">
-          <label for="profer">How would you like for us to contact you?<br>(Select One)</label>
-          <select name="profer" id="profer">
-            
-            <option >Email</option>
-            <option >Text</option>
+          <label for="profer">How would you like for us to contact you?</label>
+          <select  name="profer" id="profer">
+            <option>(Select one)</option>
+            <option>Email</option>
+            <option>Text</option>
             <option>Call</option>
-           </select>
-           
+          </select>
         </div>
         
-      
-       
-          <div class="mb-5" id="date">
-              
+       <div class="mb-5" id="date">
             <label>When is the best date for us to come out and do our test mow?</label>
              <input type="text" id="datepicker">
              <span>*</span>
@@ -150,7 +147,7 @@ version 0.12 - 10/2/2022 Tested in mobile and desktop views. Checked for grammat
           </div>
          <div class="form-group ">
           <label for="email_list">Would you like to sign up for our email list?</label>
-          <input type="text" id="email_list"  name="email_list">
+          <input selected = "Yes/no" type="text" id="email_list"  name="email_list">
           <span>*</span>
          </div>
          

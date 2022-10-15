@@ -90,9 +90,17 @@ h1{
     
 }
 
+nav a:hover{
+    background-color: rgba(15, 15, 15, 0.993) ;
+}
+/* for faq styles*/
 #faqs h1{
     margin-left: 1em;
 }
+
+#faqs p{
+    font-size: 1.5em;
+} 
 
 /* For input buttions in faq and services */
 input {
@@ -133,9 +141,8 @@ nav
    height: 10em;
 }
 
-nav a:hover{
-    background-color: rgba(15, 15, 15, 0.993) ;
-}
+
+/* for styles of the cycle2 */
 #pic{
 	width: 400px;
 	margin: 0 auto;
@@ -147,27 +154,32 @@ nav a:hover{
 	width: 350px;
 }
 
-#adv-custom-caption {
-	padding-top: 5px;
+#pic span{
+ color: rgb(0, 0, 0);
+ font-weight: bolder;
 }
 /* Styles are for the buttions in pay page */
 .buttonpay{
-    margin-left: 12em;
+    margin-left: 11em;
     margin-top: 5em;
     width: 100%;
 }
-
+/* For ids in contact form*/
 #date{
-   margin-top: 5.5em;
+   margin-top: 6.9em;
 }
 
 
 
 #lebmove {
     margin-top: 3em;
-    margin-right: -10em;
+    margin-right: -6.5em;
      display: inline;
 }
+
+
+
+
 
 
 
@@ -205,6 +217,10 @@ nav a:hover{
     margin-top: 24em;
     padding: 1px;
     
+    }
+
+    #move2{
+        margin-bottom: 25em;
     }
 
     #move4{
@@ -271,6 +287,10 @@ ul  {
         margin-bottom: 4em;
     }
 
+    #date{
+        margin-top: 5.5em;
+     }
+     
 
     
 
