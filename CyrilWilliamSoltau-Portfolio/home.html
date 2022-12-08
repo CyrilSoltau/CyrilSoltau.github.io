@@ -1,0 +1,395 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: William Soltau                                      
+#Date Created: 5/4/2022                                        
+#Version: 0.4                                                 
+#Date Last Modified: 12/8/2022                                
+#Modified by: William Soltau                                           
+#Modification log:                                    
+ --
+ Versions 0.0 8/30/2022 - Fixed the width of the backgroud picture in the header. Added back the deleted p tag in the header. Fixed the padding in the footer.
+Changed the tableS in experience to ul listS while in mobile viewport. Changed the address in the footer. 
+Versions 0.1 9/5/2022 - Made the contact form incased in a fieldset tag with a background and a container. 
+Checked for grammatical errors.
+versions 0.2 9/6/2022 - Added the linear-gradient to all section tags background.
+Versions 0.3 12/3/2022 - Added area for more projects to the project section. Added area for degrees and Certificate.
+Added codesandbox icon to the footer. Added a new favicon.
+version 0.4 12/7/2022 Added examples of mind map, Pokedex, bootstrap framework.
+version 0.5 12/8/2022 Added parallax scrolling. changed the margin of the card in about section in the mobile view.
+
+------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+<!doctype html>
+<!-- Student Name: William Soltau, 5/10/2022 -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	  <meta name="description" content="William Soltau's Personal Portfolio when it comes to software development">
+    <meta name="keywords" content="Portfolio Bootstrap Projects">
+    <meta name="author" content="William Soltau">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="images/icons8game.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrip icon-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+   <!-- My Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Cyril William Soltau | Portfolio</title>
+  </head>
+  <body>
+    <!--Bootstrip Nav bar-->
+    <!--Header and hero Image-->
+    <header class="jumbotron jumbotron-fluid  hero" >
+      <div class="container welcome">
+        <p class="lead "> Thank you for looking at my portfolio. Come on in to get to know a little about me and my experience in programming and college.<br>
+          I am also seeking to help your company with the software development of video games and finding bugs with QA testing.
+        </p>
+        <a href="#about" role="button" class="btn btn-outline-secondary btn-lg button text-white">welcome</a>
+      </div>
+    </header>
+   
+    <nav class="navbar navbar-expand-sm navbar-dark pt-2 sticky-top text-white blue">
+     <a class="navbar-brand" href="home.html"><img class="" src="images/iconmonstr-computer-9-16.png" alt="little computer">
+      &nbsp; Cyril William Soltau</a> 
+      <!-- Hamburger Menu Icon -->
+         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
+         aria-controls="navbarResponsive"
+         aria-expanded="false"
+         aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <!--Navbar links-->
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link ">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link"> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href=" #contact " class="nav-link">Contact</a>
+            </li>
+          </ul>
+      </div>
+    </nav> 
+   <!-- Main Content Area -->
+    <main>
+    <!--about section -->
+     <section id="about" >
+      <div class=" jumbotron jumbotron-fluid text-center text-white m-auto linear  ">
+       <h2 class="">A little about myself</h2> <br>
+        <div class="row1">
+          <div class=" col-sm-3 ">
+            <img src="images/babywilliam.jpg" class="card-img-top " alt="Picture of Cyril William Soltau">
+            <div class="card-header">Cyril William Benjermin Soltau</div>
+          </div>
+        </div>
+       <p class="lead">My journey to achieve my associate's in software development began while in high school. As a dual-credit student I finished all but 
+        one of my general education requirements. After high school I began my program-focused classes and finished one general ed class. I have always enjoyed using technoligies
+        from video games to computers. As I grow older I begin to enjoy/love to learn how computers work or how video games work, and the kind of work 
+        that would go into them. With my love for learning about computers, I found a free beginner course online for the basic HTML, leading me to know that 
+        programming could be my job in future.
+       </p>
+       <p class="lead"> From the start I just know that CWI would be my first stop on my journey in college, 
+        after spending so much time there with my mom because of being home schooled.
+        The CWI SWDV program has helped me realize that programming is what I would like to do for life. 
+        </p>
+      </div>
+    </section>
+  <!--Experience section-->
+  <section id="experience">
+    <div class=" linear text-white p-5 pt-5 " >
+        <div class="text-center"> <h2 >Experience</h2><br></div>
+        <!-- Show my experience in mobile veiwport only-->
+      <div class="moblie">
+        <h3>College</h3>
+        <ul>
+          <li>Comunication 101</li>
+          <li>US History 2</li>
+          <li>Western Civilization 2</li>
+          <li>Human Relations for Success</li>
+          <li>More to come...</li>
+        </ul>
+        <h3>Work Experience</h3>
+        <ul>
+          <li>The UPS store for 6 months</li>
+          <li>Worked for a landscaping company during the summer</li>
+          <li>Freelance work doing different kinds of jobs</li>
+          <li>More to come...</li>
+        </ul> 
+      </div>
+            
+          <table>
+            <thead>
+              <tr>
+                <th>College</th>
+                <th> Work Experience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Comunication 101</td>
+                <td>The UPS store for 6 months</td>
+              </tr>
+              <tr>
+                <td>US History 2</td>
+                <td>Worked for a landscaping company during the summer</td>
+              </tr>
+              <tr>
+                <td>Western Civilization 2</td>
+                <td>Freelance work doing different kinds of jobs</td>
+              </tr>
+              <tr>
+                <td>Human Relations for Success</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <table >
+            <thead>
+              <tr>
+                <th>Software</th>
+                <th>Experience</th>
+              </tr>
+           </thead>
+            <tbody>
+              <tr>
+                <td>C#</td>
+                <td>Advance Beginner</td>
+              </tr>
+              <tr>
+                <td>HTML 5 & CSS3</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>Intermediate</td>
+              </tr>
+            </tr>
+            <tr>
+              <td>Bootstrap4</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Vue.js</td>
+              <td>Beginner</td>
+            </tr>
+              <tr>
+                <td>Unity</td>
+                <td>Beginner</td>
+              </tr>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                <th colspan="2"> With more to come...</th>
+              </tr>
+            </tfoot>
+          </table>
+          <!--Certificate and degrees area comming soon-->
+        </div>
+  </section>
+  <!--projects-->
+  <section id="projects" >
+     <div class="jumbotron jumbotron-fluid linear text-white text-center pt-5" >
+       <h2 class="text-white text-center">Projects</h2><br>
+             <!--Mario css animation-->
+            <div class="row p-5">
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://williamsoltau.github.io/04-10Mario-Examples/index.html"  target="_blank" ><img src="images/mario.JPG" alt="Mario kart animation"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2>Mario Kart</h2>
+                <p class="lead"> A little animation that I made using css animation.</p><br>
+              </div>
+               <!--Daycare-->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://williamsoltau.github.io/Student-TrustedFriendsDaycare/tf_home_txt.html"  target="_blank" ><img src="images/daycare.JPG" alt="Picture for daycare website"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2>Trusted Friends Daycare</h2>
+                <p class="lead">A daycare website helping me to better understand web development for moble devices.</p><br>
+              </div>
+              <!--Music -->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://williamsoltau.github.io/music-Student/lessons-Student.html"  target="_blank" ><img src="images/music.JPG" alt="Image of a music website"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2> Fitness Website</h2>
+                <p class="lead">Bootstrap Fitness website that helps me to understand how bootstrap development works.</p><br>
+              </div>
+              <!--Simply Lawns-->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://cyrilsoltau.github.io/Simply_Lawns/Landing.html"  target="_blank" ><img src="images/simply.png" alt="Image link to a fake lawn care service"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2> Simply Lawns Website</h2>
+                <p class="lead">A fake lawn care business that I made.</p><br>
+              </div>
+               <!--Mind map-->
+              <div class="col-lg-4">
+                <figure>
+                  <a href=""  target="_blank" ><img src="images/Mindmap.pdf" alt="Mind map"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2>Mind Map</h2>
+                <P>A mind map that I created with the simply lawns website.</p><br>
+              </div>
+               <!--Pokedex-->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://ehnzb1.csb.app/"  target="_blank "><img src="images/Pokedex.png" alt="Squirtle photo link"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2> Pokedex</h2>
+                <p class="lead">Project that I made using vue.js.</p><br>
+              </div>
+               <!--Bootstrap-->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://cyrilsoltau.github.io/bootstrap_website/index.html#section1"  target="_blank" ><img src="images/bootstrap5-website.png" alt=""
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2>Bootstrap5 framework</h2>
+                <p class="lead">
+                  An kind of framework that I created using bootstrap5
+                </p><br>
+              </div>
+               <!---->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://williamsoltau.github.io/music-Student/lessons-Student.html"  target="_blank" ><img src="images/music.JPG" alt="Image of a music website"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2> Fitness Website</h2>
+                <p class="lead">
+                  Example of code that I Did.
+                </p><br>
+              </div>
+               <!---->
+              <div class="col-lg-4">
+                <figure>
+                  <a href="https://williamsoltau.github.io/music-Student/lessons-Student.html"  target="_blank" ><img src="images/music.JPG" alt="Image of a music website"
+                    class="img-fluid rounded"></a>
+                </figure>
+                <h2> Fitness Website</h2>
+                <p class="lead">Bootstrap Fitness website that helps me to understand how bootstrap development works.</p><br>
+              </div>
+           </div> 
+        </div> 
+  </section>
+  
+  <!--Contact form-->
+  <section id="contact" class="linear text-white pb-5 pt-5 text-center ">
+    <div class="alert alert-block bg-secondary container">
+               <button type="button" class="close" data-dismiss="alert">&times;</button>
+               <h4>Reminder </h4>
+               Thank you for visiting my website! Don't forget to fill out the contact form to reach me, or on how I can improve my website.
+     </div>
+     <fieldset class="bg-dark container ">
+     <form action="mailto:cyrilsoltau@my.cwi.edu?subject=PersonalPortfolioMail" enctype="text/plain" method="POST">
+         <div class="form-group container">
+             <h2 class="mt-4">
+                 Contact me
+             </h2><br><br>
+            <!-- text in fieldset-->
+            <legend>Company</legend>
+            <input  type="text" name="compName" size="30" id="company"><br>  
+         </div>
+         
+         <div class="form-group ">
+             <!--Asking for Person to contact-->
+            <legend>First & Last Name</legend>
+             <input type="text" name="contactName" size="30" id="contact"><br>
+          </div>
+         
+          <div class="form-group  ">
+            <legend>Enter your comments</legend>
+            <textarea class="container" cols="60" rows="5" name="comment"></textarea><br>
+         </div>
+          
+         <div class="form-group mt-2">
+            <!--radio box in fieldset--> 
+                <legend>How did you hear about me?</legend>
+            <input type="radio" name="were" value ="in" id ="in"><label for="in"> Indeed</label><br>
+            <input type="radio" name="were" value ="job" id ="job"><label for="job"> Jobfair</label><br>
+            <input type="radio" name="were" value ="cwi" id ="cwi"><label for="cwi">College of Western Idaho</label><br>
+            <input type="radio" name="were" value ="link" id ="link"><label for="link"> LinkedIn</label><br>
+            <input type="radio" name="were" value ="other" id ="other"><label for="other"> Other</label><br>
+            <input type="radio" name="were" value ="per" id ="per"><label for="per"> Personal recommendation</label><br><br>
+          </div>
+   
+     <div class="form-group">
+      <!--drop down menu in fieldset-->
+      <legend>Available Job Position</legend>
+      <select name="type" >
+    <optgroup label = "Position Type">
+      <option>Part-time</option> 
+      <option>Full-time</option> 
+      <option>Contract</option>
+      <option>Temporary</option>
+      <option>On Call</option>
+    </optgroup>
+    </select>
+   </div>
+   <!-- Submit and clear Button-->  
+   <button type="submit" id="" class="btn btn-outline-secondary button text-white p-2 m-2">Submit</button>
+   <input class="btn btn-outline-secondary button text-white pl-2 pr-2 p-2 m-2" type="button" id="clear_contact" value="Clear" >
+   
+   </form>
+  </fieldset>
+ </section>
+</main>
+
+<!-- Footer -->
+  <footer class="jumbotron-fluid text-center p-5 blue ">
+   <div class="container text-white">
+     <p>
+      <a href="mailto:cyrilsoltau@my.cwi.edu" class="text-white"><i class="bi bi-envelope-paper-heart-fill px-4" style="font-size: 2.5rem; color: black;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-envelope-paper-heart-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="m3 7.5 3.5 2L8 8.75l1.5.75 3.5-2v-6A1.5 1.5 0 0 0 11.5 0h-7A1.5 1.5 0 0 0 3 1.5v6ZM2 3.133l-.941.502A2 2 0 0 0 0 5.4v.313l2 1.173V3.133Zm12 3.753 2-1.173V5.4a2 2 0 0 0-1.059-1.765L14 3.133v3.753Zm-3.693 3.324L16 6.873v6.5l-5.693-3.163Zm5.634 4.274L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM5.693 10.21 0 13.372v-6.5l5.693 3.338ZM8 1.982C9.664.309 13.825 3.236 8 7 2.175 3.236 6.336.31 8 1.982Z"/>
+      </svg></i></a> 
+     </p>
+     <!--<a target="_blank" href="https://icons8.com/icon/yCeoujsiNAwK/smartphone">Smartphone</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+      <a class="text-white" href="tel:+12087036189"><img src="images/icons8-smartphone-48.png" alt="smartphone icon"></a>
+      <address>
+       Address: 104 E fairview Ave, #382, Meridian, ID 83642.
+      </address>
+      <a href="https://github.com/CyrilSoltau/CyrilSoltau.github.io" target="_blank" ><img src="images/iconmonstr-github-1-48.png" alt=" github logo" class="pr-4"> </a>
+      <a href="https://codesandbox.io/dashboard/recent?workspace=b8b43f50-9b10-4c10-8970-2ef1ab59c117" target="_blank" ><img src="images/icons8-codesandbox-an-online-code-editor-and-sharing-web-application-projects-48.png" alt="CodeSandbox logo" class="pr-4"> </a>
+      <a href="https://www.linkedin.com/" target="_blank" ><img  src="images/iconmonstr-linkedin-4-48.png" alt=" linkedin logo" class="pr-4"></a><br><br>
+      <!--<a target="_blank" href="https://icons8.com/icon/MBFOrgc9MiP6/codesandbox-an-online-code-editor-and-sharing-web-
+        application-projects">CodeSandbox an online code editor and sharing web application projects</a> 
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+      <h3> All Rights Reserved. Copyright 2022 &copy;.</h3>
+   </div>
+  </footer>
+  <script src="js/val.js"></script>
+ </body>
+</html>
