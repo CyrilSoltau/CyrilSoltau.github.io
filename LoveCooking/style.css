@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(47, 47, 97);
+ }
+ #index{
+   margin-top: 10em;
+   margin-bottom: 25.8em;
+ }
+ a {
+  color: wheat;
+ }
+ #Description{
+  margin-top: 11em;
+  margin-bottom: 18.5em;
+ }
+
+ /*Image by <a href="https://pixabay.com/users/daria-yakovleva-3938704/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1914130">Дарья Яковлева</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1914130">Pixabay</a>*/
+ #why{
+  
+   text-decoration: none;
+   margin-top: 10em;
+   margin-left: 45em;
+   margin-bottom: 12.5em;
+   padding-left: 5em;
+   padding-right: 50em;
+  
+  
+
+ }
+ 
+ /*Image by <a href="https://pixabay.com/users/pastel100-7141960/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3331009">Julia</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3331009">Pixabay</a> */
+ #photo{
+    background-image: url(./img/dessert-ge1efde24c_1280.jpg); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+
+
