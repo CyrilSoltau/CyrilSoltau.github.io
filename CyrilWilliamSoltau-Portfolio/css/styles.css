@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(122, 0, 174);
+}
 .blue{
     background-color: rgb(7, 171, 241);
 }
@@ -41,7 +44,7 @@ nav a:hover{
     font-size: 1.5em;
 }
 .linear{
-    background: linear-gradient(to bottom, #515166 , #21048b);
+    background: linear-gradient(to bottom, #515166 , #21048b,#4d4dff);
 }
 #experience h2 {
     margin-top: 45px;
